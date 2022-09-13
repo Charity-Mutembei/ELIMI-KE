@@ -3,9 +3,40 @@
 
 
 {% block content %}
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}" />
+</head>
 
-    <body>
-        
-    </body>
+<body>
+    <div class="container" id="check">
+        <!-- Columns are always 50% wide, on mobile and desktop -->
+        <div class="row">
+            <div class="col-6"><span></span></div>
+            <div class="col-6">
+                <h1 id="check1"> Dont Know Where To Start with Your Learning? </h1>
+
+                <h4 id="check2"> We can help  ......... <i class="fa fa-level-down" aria-hidden="true"></i> </h4>
+
+                <div class="row" id="check3">
+                    <div class="col-3">
+                        <h5
+                        onMouseOver="this.style.cursor='pointer', this.style.color='#F6AA1C'"
+                        onMouseOut="this.style.color='#ffff'" 
+                        >Sign up ?</h5>
+                    </div>
+                    <div class="col-6">
+                        <strong><hr></strong>
+                    </div>
+                    <div class="col-3">
+                        <h5
+                        onMouseOver="this.style.cursor='pointer', this.style.color='#F6AA1C'"
+                        onMouseOut="this.style.color='#ffff'" 
+                        >Log in ? </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 
 {% endblock %}
