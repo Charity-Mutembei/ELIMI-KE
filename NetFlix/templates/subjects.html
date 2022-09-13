@@ -1,0 +1,124 @@
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/811afa3184.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/502397a549.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        
+
+    <title>Hello There</title>
+    <script src="https://use.fontawesome.com/10348dc103.js"></script>
+</head>
+<style>
+    body{
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    background-image: url("{% static '/pexels-pnw-production-8091225.jpg' %}");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    /* background-size: 43% 100vh; */
+}
+.overall{
+    background-color: rgba(0, 0, 0, 0.4);
+    /* height: 10cm; */
+}
+/* #searchBar{
+    padding: 4cm;
+} */
+#searchBar1{
+    margin-left: 5cm;
+    margin-top:-2cm;
+    align-items: center;
+}
+.center{
+    margin-top: 5cm;
+}
+</style>
+<body>
+<div class="overall">
+    {% block navbar %}
+    {% include 'navbar.html' %}
+    {% endblock %}
+
+    <div class="center">
+        <div class="container">
+            <div class="row">
+              <div class="col">
+                <span></span>
+              </div>
+              <div class="col-6">
+                <div class="text">
+                    <h2 id="searchBar1">
+                        <strong>
+                            Don't Know Where to Start?
+                            <br>
+                            Search for subjects
+                        </strong>
+                    </h2>
+                </div>
+              </div>
+              <div class="col">
+                <span></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <span></span>
+              </div>
+              <div class="col-10">
+                <div class="searchBar">
+                    <div class="container-fluid">
+                        <form class="d-flex" id="searchBar">
+                            <input class="form-control me-6" type="search" placeholder="&#xf002; Search"  aria-label="Search">
+                        </form>
+                    </div>
+                
+                </div>
+              </div>
+              <div class="col">
+                <span></span>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <span></span>
+                </div>
+                <div class="col-8">
+                    <span class="badge bg-warning text-dark" id="badge">Maths</span>
+                    <span class="badge bg-danger text-dark" id="badge">Maths</span>
+                    <span class="badge bg-warning text-dark" id="badge">Maths</span>
+                    <span class="badge bg-danger text-dark" id="badge">Maths</span>
+                    <span class="badge bg-warning text-dark" id="badge">Maths</span>
+                    <span class="badge bg-danger text-dark" id="badge">Maths</span>
+                    <span class="badge bg-warning text-dark" id="badge">Maths</span>
+                    <span class="badge bg-danger text-dark" id="badge">Maths</span>
+                    <span class="badge bg-warning text-dark" id="badge">Maths</span>
+                    <span class="badge bg-danger text-dark" id="badge">Maths</span>
+                    <span class="badge bg-warning text-dark" id="badge">Maths</span>
+                    <span class="badge bg-danger text-dark" id="badge">Maths</span>
+                </div>
+                <div class="col">
+                    <span></span>
+                </div>
+            </div>
+          </div>
+       
+       
+    </div>
+</div>
+
+
+
+</body>

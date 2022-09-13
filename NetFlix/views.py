@@ -5,3 +5,5 @@ from django.http import HttpResponse
 
 def welcome(request):
     return render ( request, 'index.html')
+def subjects(request):
+    return render (request, 'subjects.html') 
