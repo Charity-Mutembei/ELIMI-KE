@@ -7,3 +7,6 @@ def welcome(request):
     return render ( request, 'index.html')
 def subjects(request):
     return render (request, 'subjects.html') 
+
+def topics(request):
+    return render (request, 'topics.html')
